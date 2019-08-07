@@ -1,5 +1,5 @@
 ## this file is loaded via "dbLoadTemplate" from the IOC
-file "/mnt/user/data/config/iseg_epics.db"
+file "/home/fulcher/Desktop/iseg-ioc/isegApp/Dbiseg_epics.db"
 {
 pattern {CONTROLLER_SN,CAN_LINE,DEVICE_ID,MODULE_ID,CHANNEL_ID,ALIAS1,ALIAS2}
 {5230102,0,1000,0,0,ch0,CH0}
