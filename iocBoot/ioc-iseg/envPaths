@@ -1,0 +1,8 @@
+epicsEnvSet("IOC","ioc-iseg")
+epicsEnvSet("TOP","/home/fulcher/Desktop/iseg-ioc")
+epicsEnvSet("DIAGSTD","/usr/lib/epics")
+epicsEnvSet("AUTOSAVE","/usr/lib/epics")
+epicsEnvSet("IOCSTATS","/usr/lib/epics")
+epicsEnvSet("CAPUTLOG","/usr/lib/epics")
+epicsEnvSet("RECCASTER","/usr/lib/epics")
+epicsEnvSet("EPICS_BASE","/usr/lib/epics")

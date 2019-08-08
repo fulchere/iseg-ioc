@@ -9,13 +9,13 @@ epicsEnvSet("STREAM_PROTOCOL_PATH", "$(TOP)")
 dbLoadDatabase("${TOP}/dbd/iseg.dbd",0,0)
 iseg_registerRecordDeviceDriver(pdbbase)
 
-isegHalConnect("NAME","INTERFACE")
+isegHalConnect("can0","can0")
 
-drvAsynIPPortConfigure("dev1","192.168.1.101", 0, 0, 0)
+## drvAsynIPPortConfigure("dev1","192.168.1.101", 0, 0, 0)
 
 ## Load record instances
 dbLoadRecords("../../db/iseg.db")
 
-dbLoadRecords("$(EPICS_BASE)/db/asynRecord.db","P=,R=asyn,PORT=dev1,ADDR=0,OMAX=40,IMAX=40")
+## dbLoadRecords("$(EPICS_BASE)/db/asynRecord.db","P=,R=asyn,PORT=dev1,ADDR=0,OMAX=40,IMAX=40")
 
 iocInit()
